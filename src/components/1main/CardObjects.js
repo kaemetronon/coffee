@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 
 
-export const CardObjects = ({tempObjects}) => {
+export const CardObjects = ({places}) => {
 
     const getObjs = o => {
         if (o.length === 0)
@@ -27,7 +27,7 @@ export const CardObjects = ({tempObjects}) => {
     return (
         <div className="input-group-btn search-panel">
             <div className="card-group">
-                {getObjs(tempObjects)}
+                {getObjs(places)}
             </div>
         </div>
     )
